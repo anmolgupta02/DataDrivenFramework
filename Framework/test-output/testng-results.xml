@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-07-09T19:56:32Z" name="Suite" finished-at="2019-07-09T19:56:46Z" duration-ms="13525">
+    <groups>
+    </groups>
+    <test started-at="2019-07-09T19:56:32Z" name="Test" finished-at="2019-07-09T19:56:46Z" duration-ms="13525">
+      <class name="com.website.testcases.LoginTest">
+        <test-method is-config="true" signature="setupFile()[pri:0, instance:com.website.testcases.LoginTest@75f9eccc]" started-at="2019-07-10T01:26:32Z" name="setupFile" finished-at="2019-07-10T01:26:32Z" duration-ms="635" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupFile -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.website.testcases.LoginTest@75f9eccc]" started-at="2019-07-10T01:26:32Z" name="setup" finished-at="2019-07-10T01:26:39Z" duration-ms="6377" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TestLogin()[pri:0, instance:com.website.testcases.LoginTest@75f9eccc]" started-at="2019-07-10T01:26:39Z" name="TestLogin" finished-at="2019-07-10T01:26:45Z" duration-ms="6521" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestLogin -->
+        <test-method is-config="true" signature="TearDownMethod(org.testng.ITestResult)[pri:0, instance:com.website.testcases.LoginTest@75f9eccc]" started-at="2019-07-10T01:26:45Z" name="TearDownMethod" finished-at="2019-07-10T01:26:46Z" duration-ms="536" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TestLogin status=SUCCESS method=LoginTest.TestLogin()[pri:0, instance:com.website.testcases.LoginTest@75f9eccc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDownMethod -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.website.testcases.LoginTest@75f9eccc]" started-at="2019-07-10T01:26:46Z" name="TearDown" finished-at="2019-07-10T01:26:46Z" duration-ms="79" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.website.testcases.LoginTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
