@@ -11,7 +11,7 @@ public class LoginTest extends BaseClass {
 	HomePage homepage;
 	
 	@Test
-	public void TestLogin() {
+	public void TestLogin() throws Exception {
 		
 		logger = reports.createTest("Login to InstaCEI");
 		

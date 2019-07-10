@@ -14,7 +14,9 @@ public class ExcelDataProvider {
 	XSSFWorkbook wb;
 	public ExcelDataProvider() throws Exception {
 		
-		File src = new File("/home/appventurez/eclipse-workspace/Framework/TestData/Data.xlsx");
+		
+		String Filepath = System.getProperty("user.dir")+"/Framework/TestData/Data.xlsx";
+		File src = new File(Filepath);
 		FileInputStream fis = new FileInputStream(src);
 		
 		//Apache POI to read the file. 
@@ -40,14 +42,6 @@ public class ExcelDataProvider {
 		return wb.getSheet(SheetName).getRow(rownum).getCell(colnum).getNumericCellValue();
 	}
 	
-	public boolean isNum(String s) {
-		 for (int i = 0; i < s.length(); i++) 
-		        if (Character.isDigit(s.charAt(i))  
-		            == false) 
-		            return false; 
-		  
-		        return true;
-	}
 }
 
 
