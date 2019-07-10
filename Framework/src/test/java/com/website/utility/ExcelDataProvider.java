@@ -15,7 +15,7 @@ public class ExcelDataProvider {
 	public ExcelDataProvider() throws Exception {
 		
 		
-		String Filepath = System.getProperty("user.dir")+"/Framework/TestData/Data.xlsx";
+		String Filepath = System.getProperty("user.dir")+"/TestData/Data.xlsx";
 		File src = new File(Filepath);
 		FileInputStream fis = new FileInputStream(src);
 		

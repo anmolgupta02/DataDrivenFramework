@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-07-10T05:23:50Z" name="Default suite" finished-at="2019-07-10T05:23:50Z" duration-ms="37">
+  <suite started-at="2019-07-10T05:25:40Z" name="Default suite" finished-at="2019-07-10T05:25:40Z" duration-ms="30">
     <groups>
     </groups>
-    <test started-at="2019-07-10T05:23:50Z" name="Default test" finished-at="2019-07-10T05:23:50Z" duration-ms="37">
+    <test started-at="2019-07-10T05:25:40Z" name="Default test" finished-at="2019-07-10T05:25:40Z" duration-ms="30">
       <class name="com.website.testcases.LoginTest">
-        <test-method is-config="true" signature="setupFile()[pri:0, instance:com.website.testcases.LoginTest@75f9eccc]" started-at="2019-07-10T10:53:50Z" name="setupFile" finished-at="2019-07-10T10:53:50Z" duration-ms="194" status="PASS">
+        <test-method is-config="true" signature="setupFile()[pri:0, instance:com.website.testcases.LoginTest@75f9eccc]" started-at="2019-07-10T10:55:39Z" name="setupFile" finished-at="2019-07-10T10:55:40Z" duration-ms="1181" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupFile -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.website.testcases.LoginTest@75f9eccc]" started-at="2019-07-10T10:53:50Z" name="setup" finished-at="2019-07-10T10:53:50Z" duration-ms="0" status="FAIL">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.website.testcases.LoginTest@75f9eccc]" started-at="2019-07-10T10:55:40Z" name="setup" finished-at="2019-07-10T10:55:40Z" duration-ms="0" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -45,7 +45,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TestLogin()[pri:0, instance:com.website.testcases.LoginTest@75f9eccc]" started-at="2019-07-10T10:53:50Z" name="TestLogin" finished-at="2019-07-10T10:53:50Z" duration-ms="0" status="SKIP">
+        <test-method signature="TestLogin()[pri:0, instance:com.website.testcases.LoginTest@75f9eccc]" started-at="2019-07-10T10:55:40Z" name="TestLogin" finished-at="2019-07-10T10:55:40Z" duration-ms="0" status="SKIP">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -79,7 +79,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestLogin -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.website.testcases.LoginTest@75f9eccc]" started-at="2019-07-10T10:53:50Z" name="TearDown" finished-at="2019-07-10T10:53:50Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.website.testcases.LoginTest@75f9eccc]" started-at="2019-07-10T10:55:40Z" name="TearDown" finished-at="2019-07-10T10:55:40Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
