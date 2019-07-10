@@ -8,8 +8,8 @@ public class ConfigReader {
 
 	Properties pro;
 	public ConfigReader() throws Exception {
-		
-		File src = new File("/home/appventurez/eclipse-workspace/Framework/Configuration/config.properties");
+		String filepath = System.getProperty("user.dir")+"/Configuration/config.properties";
+		File src = new File(filepath);
 		FileInputStream fis = new FileInputStream(src);
 		pro = new Properties();
 		pro.load(fis);
