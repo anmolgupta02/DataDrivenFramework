@@ -40,7 +40,7 @@ public class BaseClass {
 			edp = new ExcelDataProvider();
 			cr = new ConfigReader();
 		} catch (Exception e) {
-			System.out.println("Could not read file"+e);
+			System.out.println("Could not read file "+e);
 		}
 		
 		//Init ExtentReporter variables
