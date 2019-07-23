@@ -44,7 +44,7 @@ public class BaseClass {
 		}
 		
 		//Init ExtentReporter variables
-		ExtentHtmlReporter extent = new ExtentHtmlReporter(new File("/home/appventurez/eclipse-workspace/Framework/Reports/LoginReport "+Helper.getCurrentDateTime()+".html"));
+		ExtentHtmlReporter extent = new ExtentHtmlReporter(new File(System.getProperty("user.dir")+Helper.getCurrentDateTime()+".html"));
 		reports = new ExtentReports();
 		reports.attachReporter(extent); 
 	}
@@ -67,6 +67,7 @@ public class BaseClass {
 		//Capture ScreenShot after each and every failed case.
 		if(result.getStatus()==ITestResult.FAILURE) {
 			//Helper.captureScreenshot(driver);
+			
 			//Adding ScreenShot in the logs
 			logger.fail("Test Failed", MediaEntityBuilder.createScreenCaptureFromPath(Helper.captureScreenshot(driver)).build());
 		}

@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-07-22T12:20:56Z" name="Default suite" finished-at="2019-07-22T12:21:11Z" duration-ms="15240">
+  <suite started-at="2019-07-23T10:33:57Z" name="Suite" finished-at="2019-07-23T10:34:14Z" duration-ms="17230">
     <groups>
     </groups>
-    <test started-at="2019-07-22T12:20:56Z" name="Default test" finished-at="2019-07-22T12:21:11Z" duration-ms="15240">
+    <test started-at="2019-07-23T10:33:57Z" name="Test" finished-at="2019-07-23T10:34:14Z" duration-ms="17230">
       <class name="com.website.testcases.LoginTest">
-        <test-method is-config="true" signature="setupFile()[pri:0, instance:com.website.testcases.LoginTest@75f9eccc]" started-at="2019-07-22T17:50:55Z" name="setupFile" finished-at="2019-07-22T17:50:56Z" duration-ms="654" status="PASS">
+        <test-method is-config="true" signature="setupFile()[pri:0, instance:com.website.testcases.LoginTest@75f9eccc]" started-at="2019-07-23T16:03:56Z" name="setupFile" finished-at="2019-07-23T16:03:57Z" duration-ms="684" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupFile -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.website.testcases.LoginTest@75f9eccc]" started-at="2019-07-22T17:50:56Z" name="setup" finished-at="2019-07-22T17:51:04Z" duration-ms="8003" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.website.testcases.LoginTest@75f9eccc]" started-at="2019-07-23T16:03:57Z" name="setup" finished-at="2019-07-23T16:04:07Z" duration-ms="10061" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TestLogin()[pri:0, instance:com.website.testcases.LoginTest@75f9eccc]" started-at="2019-07-22T17:51:04Z" name="TestLogin" finished-at="2019-07-22T17:51:11Z" duration-ms="6553" status="PASS">
+        <test-method signature="TestLogin()[pri:0, instance:com.website.testcases.LoginTest@75f9eccc]" started-at="2019-07-23T16:04:07Z" name="TestLogin" finished-at="2019-07-23T16:04:13Z" duration-ms="6551" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestLogin -->
-        <test-method is-config="true" signature="TearDownMethod(org.testng.ITestResult)[pri:0, instance:com.website.testcases.LoginTest@75f9eccc]" started-at="2019-07-22T17:51:11Z" name="TearDownMethod" finished-at="2019-07-22T17:51:11Z" duration-ms="591" status="PASS">
+        <test-method is-config="true" signature="TearDownMethod(org.testng.ITestResult)[pri:0, instance:com.website.testcases.LoginTest@75f9eccc]" started-at="2019-07-23T16:04:13Z" name="TearDownMethod" finished-at="2019-07-23T16:04:14Z" duration-ms="524" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,11 +30,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDownMethod -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.website.testcases.LoginTest@75f9eccc]" started-at="2019-07-22T17:51:11Z" name="TearDown" finished-at="2019-07-22T17:51:11Z" duration-ms="75" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.website.testcases.LoginTest@75f9eccc]" started-at="2019-07-23T16:04:14Z" name="TearDown" finished-at="2019-07-23T16:04:14Z" duration-ms="75" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
       </class> <!-- com.website.testcases.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
