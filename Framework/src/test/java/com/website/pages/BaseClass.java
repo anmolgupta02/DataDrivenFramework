@@ -44,7 +44,7 @@ public class BaseClass {
 		}
 		
 		//Init ExtentReporter variables
-		ExtentHtmlReporter extent = new ExtentHtmlReporter(new File(System.getProperty("user.dir")+Helper.getCurrentDateTime()+".html"));
+		ExtentHtmlReporter extent = new ExtentHtmlReporter(new File(System.getProperty("user.dir")+"/Reports/"+Helper.getCurrentDateTime()+".html"));
 		reports = new ExtentReports();
 		reports.attachReporter(extent); 
 	}

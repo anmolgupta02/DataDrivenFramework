@@ -1,6 +1,11 @@
 package com.website.testcases;
 
 import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
 import org.openqa.selenium.support.PageFactory;
 
 import com.website.pages.BaseClass;
@@ -23,7 +28,5 @@ public class LoginTest extends BaseClass {
 	
 		logger.pass("Login Done! Case pased");
 	}
-	
-	
 	
 }

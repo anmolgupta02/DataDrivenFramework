@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test name="Test(failed)">
+  <test name="TestWithWrongCred(failed)">
     <classes>
-      <class name="com.website.testcases.LoginTest">
+      <class name="com.website.testcases.LoginWithWrongCred">
         <methods>
           <include name="TearDownMethod"/>
           <include name="setupFile"/>
           <include name="TearDown"/>
           <include name="setup"/>
-          <include name="TestLogin"/>
+          <include name="TestLoginWithWrongCed"/>
         </methods>
-      </class> <!-- com.website.testcases.LoginTest -->
+      </class> <!-- com.website.testcases.LoginWithWrongCred -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- TestWithWrongCred(failed) -->
 </suite> <!-- Failed suite [Suite] -->

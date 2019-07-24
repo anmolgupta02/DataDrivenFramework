@@ -2,39 +2,39 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-07-23T10:33:57Z" name="Suite" finished-at="2019-07-23T10:34:14Z" duration-ms="17230">
+  <suite started-at="2019-07-24T05:07:50Z" name="Default suite" finished-at="2019-07-24T05:08:15Z" duration-ms="25024">
     <groups>
     </groups>
-    <test started-at="2019-07-23T10:33:57Z" name="Test" finished-at="2019-07-23T10:34:14Z" duration-ms="17230">
-      <class name="com.website.testcases.LoginTest">
-        <test-method is-config="true" signature="setupFile()[pri:0, instance:com.website.testcases.LoginTest@75f9eccc]" started-at="2019-07-23T16:03:56Z" name="setupFile" finished-at="2019-07-23T16:03:57Z" duration-ms="684" status="PASS">
+    <test started-at="2019-07-24T05:07:50Z" name="Default test" finished-at="2019-07-24T05:08:15Z" duration-ms="25024">
+      <class name="com.website.testcases.LoginWithWrongCred">
+        <test-method is-config="true" signature="setupFile()[pri:0, instance:com.website.testcases.LoginWithWrongCred@75f9eccc]" started-at="2019-07-24T10:37:50Z" name="setupFile" finished-at="2019-07-24T10:37:50Z" duration-ms="685" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupFile -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.website.testcases.LoginTest@75f9eccc]" started-at="2019-07-23T16:03:57Z" name="setup" finished-at="2019-07-23T16:04:07Z" duration-ms="10061" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.website.testcases.LoginWithWrongCred@75f9eccc]" started-at="2019-07-24T10:37:50Z" name="setup" finished-at="2019-07-24T10:38:03Z" duration-ms="12748" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TestLogin()[pri:0, instance:com.website.testcases.LoginTest@75f9eccc]" started-at="2019-07-23T16:04:07Z" name="TestLogin" finished-at="2019-07-23T16:04:13Z" duration-ms="6551" status="PASS">
+        <test-method signature="TestLoginWithWrongCed()[pri:1, instance:com.website.testcases.LoginWithWrongCred@75f9eccc]" started-at="2019-07-24T10:38:03Z" name="TestLoginWithWrongCed" finished-at="2019-07-24T10:38:15Z" duration-ms="11598" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestLogin -->
-        <test-method is-config="true" signature="TearDownMethod(org.testng.ITestResult)[pri:0, instance:com.website.testcases.LoginTest@75f9eccc]" started-at="2019-07-23T16:04:13Z" name="TearDownMethod" finished-at="2019-07-23T16:04:14Z" duration-ms="524" status="PASS">
+        </test-method> <!-- TestLoginWithWrongCed -->
+        <test-method is-config="true" signature="TearDownMethod(org.testng.ITestResult)[pri:0, instance:com.website.testcases.LoginWithWrongCred@75f9eccc]" started-at="2019-07-24T10:38:15Z" name="TearDownMethod" finished-at="2019-07-24T10:38:15Z" duration-ms="585" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TestLogin status=SUCCESS method=LoginTest.TestLogin()[pri:0, instance:com.website.testcases.LoginTest@75f9eccc] output={null}]]]>
+                <![CDATA[[TestResult name=TestLoginWithWrongCed status=SUCCESS method=LoginWithWrongCred.TestLoginWithWrongCed()[pri:1, instance:com.website.testcases.LoginWithWrongCred@75f9eccc] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDownMethod -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.website.testcases.LoginTest@75f9eccc]" started-at="2019-07-23T16:04:14Z" name="TearDown" finished-at="2019-07-23T16:04:14Z" duration-ms="75" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.website.testcases.LoginWithWrongCred@75f9eccc]" started-at="2019-07-24T10:38:15Z" name="TearDown" finished-at="2019-07-24T10:38:15Z" duration-ms="81" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-      </class> <!-- com.website.testcases.LoginTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.website.testcases.LoginWithWrongCred -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
