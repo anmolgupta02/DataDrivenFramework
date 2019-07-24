@@ -1,6 +1,7 @@
 package com.website.pages;
 
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -41,6 +42,15 @@ public class HomePage {
 	@FindBy
 	(xpath="/html/body/app-root/app-theme/div/div/div[2]/app-nav-router/app-howto/section/div/div/div/h4")
 	WebElement landingHeader; 
+	
+	@FindBy
+	(xpath="/html/body/app-root/app-theme/div/div/div[1]/app-header/div[1]/nav/div/ul/li[8]/a")
+	WebElement LogoutTrigger; 
+	
+	@FindBy
+	(xpath="/html/body/app-root/app-theme/div/div/div[1]/app-header/div[2]/modal/div/div/div/div[3]/modal-footer/button[2]")
+	WebElement confirmButton;
+	
 	
 	public void LoginProcess(String email, String Password) throws Exception {
 			Thread.sleep(3000);
@@ -88,6 +98,21 @@ public class HomePage {
 	
 	public String getHeading() {
 		return landingHeader.getText();
+	}
+
+	public boolean logout() throws Exception {
+		// TODO Auto-generated method stub
+		LogoutTrigger.click();
+//		
+//		Alert alert = driver.switchTo().alert();
+//		String alertText = alert.getText();
+//		System.out.println("Alert Text is "+ alertText);
+//		Thread.sleep(5000);
+//		alert.accept();
+//		Thread.sleep(5000);
+		confirmButton.click();
+		return true; 
+	
 	}
 	
 }

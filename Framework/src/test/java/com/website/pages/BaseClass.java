@@ -28,7 +28,7 @@ public class BaseClass {
 	public ConfigReader cr;
 	public ExcelDataProvider edp;
 	
-	//Global Variables for ExtentReports
+	//Global Variables for ExtentReportsx
 	public ExtentReports reports;
 	public ExtentTest logger;
 	
@@ -44,7 +44,7 @@ public class BaseClass {
 		}
 		
 		//Init ExtentReporter variables
-		ExtentHtmlReporter extent = new ExtentHtmlReporter(new File(System.getProperty("user.dir")+"/Reports/"+Helper.getCurrentDateTime()+".html"));
+		ExtentHtmlReporter extent = new ExtentHtmlReporter(new File(System.getProperty("user.dir")+"/Reports/"+"Report at "+Helper.getCurrentDateTime()+".html"));
 		reports = new ExtentReports();
 		reports.attachReporter(extent); 
 	}
