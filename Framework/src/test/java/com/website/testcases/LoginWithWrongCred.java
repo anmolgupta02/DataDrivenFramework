@@ -29,7 +29,6 @@ public class LoginWithWrongCred extends BaseClass{
 		Assert.assertTrue(founderror.equalsIgnoreCase(expectedError));
 		
 		logger.pass("Error message is correct! Case passed");
-	}
-	
+	}	
 	
 }
