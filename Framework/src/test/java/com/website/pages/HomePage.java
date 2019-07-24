@@ -38,6 +38,9 @@ public class HomePage {
 	(xpath="/html/body/ngb-modal-window/div/div/form/div[1]/button/span")
 	WebElement cross;
 	
+	@FindBy
+	(xpath="/html/body/app-root/app-theme/div/div/div[2]/app-nav-router/app-howto/section/div/div/div/h4")
+	WebElement landingHeader; 
 	
 	public void LoginProcess(String email, String Password) throws Exception {
 			Thread.sleep(3000);
@@ -83,6 +86,8 @@ public class HomePage {
 		return errorHolder.getText();
 	}
 	
-	
+	public String getHeading() {
+		return landingHeader.getText();
+	}
 	
 }

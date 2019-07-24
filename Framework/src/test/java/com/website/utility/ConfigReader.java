@@ -23,6 +23,12 @@ public class ConfigReader {
 	public String getBaseURL() {
 		return pro.getProperty("baseURL");
 	}
+	public String getErrorMsg() {
+		return pro.getProperty("errorMsg");
+	}
 	
+	public String getLandingHeading() {
+		return pro.getProperty("landingHeading");
+	}
 	
 }

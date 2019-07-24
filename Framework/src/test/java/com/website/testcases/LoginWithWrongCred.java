@@ -24,11 +24,18 @@ public class LoginWithWrongCred extends BaseClass{
 		homepage.LoginProcessNew(edp.getStringData("login",1,0), edp.getStringData("login",1,1));
 		
 		String founderror = homepage.getError(); 
-		String expectedError = "Email not Found";
+		String expectedError = cr.getErrorMsg();
 		
-		Assert.assertTrue(founderror.equalsIgnoreCase(expectedError));
+		//Assert.assertTrue(founderror.equalsIgnoreCase(expectedError));
 		
-		logger.pass("Error message is correct! Case passed");
+		if(founderror.equalsIgnoreCase(expectedError)) {
+			logger.pass("Error message is correct! Case passed");
+		}
+		else {
+			logger.fail("Error message is not correct Failing the test");
+		}
+		
+		
 	}	
 	
 }
