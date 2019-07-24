@@ -17,6 +17,9 @@ public class SignUpPage {
 	(xpath = "")
 	WebElement FirstName;
 	
+	@FindBy
+	(xpath="")
+	
 	
 	
 }
