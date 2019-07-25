@@ -15,6 +15,7 @@ public class LoginTest extends BaseClass {
 
 	HomePage homepage;
 	Boolean status;
+	
 	@Test(priority = 1)
 	public void TestLogin() throws Exception {
 		

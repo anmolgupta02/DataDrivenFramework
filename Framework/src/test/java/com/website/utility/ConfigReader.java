@@ -31,4 +31,8 @@ public class ConfigReader {
 		return pro.getProperty("landingHeading");
 	}
 	
+	public String getSignUpMsg() {
+		return pro.getProperty("SignUpMessage");
+	}
+	
 }
