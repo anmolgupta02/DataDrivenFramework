@@ -1,5 +1,7 @@
 package com.website.testcases;
 
+import org.testng.annotations.Test;
+import org.testng.Assert;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
@@ -19,9 +21,11 @@ public class SignUpTest extends BaseClass {
 		
 		logger.info("Reading Data in the file");
 		
-		sup.SignUpProcess(edp.getStringData("SignUpData", 0, 1), edp.getStringData("SignUpData", 0, 2), 
-				edp.getStringData("SignUpData", 0, 3),edp.getStringData("SignUpData", 0, 4),
-				edp.getStringData("SignUpData", 0, 5), edp.getStringData("SignUpData", 0, 6));
+		sup.SignUpProcess(edp.getStringData("SignUpData",0,0), edp.getStringData("SignUpData",0,1), 
+				edp.getStringData("SignUpData",0,2),edp.getStringData("SignUpData",0,3),
+				edp.getStringData("SignUpData",0,4), edp.getStringData("SignUpData",0,5));
+		
+		Thread.sleep(3000);
 		
 		String SignUpMsgExpected = cr.getSignUpMsg();
 		String SignUpMsgActual = sup.getMsg();

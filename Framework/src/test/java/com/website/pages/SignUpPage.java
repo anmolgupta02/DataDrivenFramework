@@ -14,38 +14,39 @@ public class SignUpPage  {
 	}
 	
 	@FindBy
-	(xpath = "")
+	(xpath = "/html/body/app-root/app-theme/div/div/div[1]/app-header/div/nav/div/ul/li[9]/a")
 	WebElement SignUpTrigger;
 	
 	@FindBy
-	(xpath = "")
+	(xpath = "/html/body/ngb-modal-window/div/div/div[2]/div/form/div/div/div[2]/input")
 	WebElement FirstName;
 	
 	@FindBy
-	(xpath="")
+	(xpath="/html/body/ngb-modal-window/div/div/div[2]/div/form/div/div/div[3]/input")
 	WebElement LastName;
 	
 	@FindBy
-	(xpath="")
+	(xpath="/html/body/ngb-modal-window/div/div/div[2]/div/form/div/div/div[4]/input")
 	WebElement CompanyName;
 	
 	@FindBy
+	(xpath = "/html/body/ngb-modal-window/div/div/div[2]/div/form/div/div/div[5]/input")
 	WebElement Email;
 	
 	@FindBy
-	(xpath = "")
+	(xpath = "/html/body/ngb-modal-window/div/div/div[2]/div/form/div/div/div[6]/input")
 	WebElement password;
 	
 	@FindBy
-	(xpath = "")
+	(xpath = "/html/body/ngb-modal-window/div/div/div[2]/div/form/div/div/div[7]/input")
 	WebElement cpass;
 	
 	@FindBy
-	(xpath = "")
+	(xpath = "/html/body/ngb-modal-window/div/div/div[2]/div/form/div/div/div[8]/button")
 	WebElement singUpButton;
 		
 	@FindBy
-	(xpath = "")
+	(xpath = "/html/body/ngb-modal-window/div/div/div[2]/div/form/div/div/div[2]")
 	WebElement msgbox;
 
 
@@ -57,6 +58,7 @@ public class SignUpPage  {
 		
 		FirstName.sendKeys(Fname);
 		LastName.sendKeys(Lname);
+		CompanyName.sendKeys(CompName);
 		this.Email.sendKeys(Email);
 		password.sendKeys(pass);
 		this.cpass.sendKeys(cpass);
