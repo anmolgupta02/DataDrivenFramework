@@ -31,6 +31,7 @@ public class SignUpTest extends BaseClass {
 			logger.pass("Test Case Passed, Sign Up successful");
 		}else {
 			logger.fail("Test Case Failed, Could not signed up");
+			
 		}
 	}
 
