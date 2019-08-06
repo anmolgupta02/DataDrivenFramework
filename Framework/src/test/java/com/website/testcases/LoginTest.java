@@ -40,6 +40,7 @@ public class LoginTest extends BaseClass {
 		logger.info("Logging out now.");
 		
 		status = homepage.logout();
+		
 		if(status) {
 		logger.pass("Logged out successfully");
 		}else {

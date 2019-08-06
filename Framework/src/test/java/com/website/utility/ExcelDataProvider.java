@@ -1,19 +1,19 @@
+
 package com.website.utility;
 
 import java.io.File;
-import java.io.FileInputStream;
 
+import java.io.FileInputStream;
 
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-import com.google.common.collect.Table.Cell;
+//import net.bytebuddy.dynamic.loading.ClassInjector.UsingLookup.Dispatcher.Creator;
 
 public class ExcelDataProvider {
 
 	
 	XSSFWorkbook wb;
 	public ExcelDataProvider() throws Exception {
-		
 		
 		String Filepath = System.getProperty("user.dir")+"/TestData/Data.xlsx";
 		File src = new File(Filepath);
@@ -24,6 +24,7 @@ public class ExcelDataProvider {
 	}
 	
 	//Reading File and getting String Value
+	@SuppressWarnings("deprecation")
 	public String getStringData(String SheetName, int rownum, int colnum) {
 		
 		
@@ -32,6 +33,7 @@ public class ExcelDataProvider {
 		org.apache.poi.ss.usermodel.Cell c1 = wb.getSheet(SheetName).getRow(rownum).getCell(colnum);
 		c1.setCellType(org.apache.poi.ss.usermodel.Cell.CELL_TYPE_STRING);
 		String data = c1.getStringCellValue();
+		data.toString();
 		return data;
 		
 		

@@ -3,15 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.website.testcases.SignUpTest">
+      <class name="com.website.testcases.LoginTest">
         <methods>
           <include name="TearDownMethod"/>
-          <include name="TestSignUp"/>
           <include name="setupFile"/>
           <include name="TearDown"/>
+          <include name="TestLoginWithWrongCed"/>
           <include name="setup"/>
+          <include name="TestLogin"/>
         </methods>
-      </class> <!-- com.website.testcases.SignUpTest -->
+      </class> <!-- com.website.testcases.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
