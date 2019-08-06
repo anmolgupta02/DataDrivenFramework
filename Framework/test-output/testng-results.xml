@@ -1,55 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-08-06T06:46:53Z" name="Default suite" finished-at="2019-08-06T06:47:40Z" duration-ms="47442">
+  <suite started-at="2019-08-06T13:26:51Z" name="Default suite" finished-at="2019-08-06T13:27:52Z" duration-ms="61439">
     <groups>
     </groups>
-    <test started-at="2019-08-06T06:46:53Z" name="Default test" finished-at="2019-08-06T06:47:40Z" duration-ms="47442">
-      <class name="com.website.testcases.LoginTest">
-        <test-method is-config="true" signature="setupFile()[pri:0, instance:com.website.testcases.LoginTest@52aa2946]" started-at="2019-08-06T12:16:52Z" name="setupFile" finished-at="2019-08-06T12:16:53Z" duration-ms="637" status="PASS">
+    <test started-at="2019-08-06T13:26:51Z" name="Default test" finished-at="2019-08-06T13:27:52Z" duration-ms="61439">
+      <class name="com.website.testcases.ProjectCreationTest">
+        <test-method is-config="true" signature="setupFile()[pri:0, instance:com.website.testcases.ProjectCreationTest@75f9eccc]" started-at="2019-08-06T18:56:50Z" name="setupFile" finished-at="2019-08-06T18:56:51Z" duration-ms="647" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupFile -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.website.testcases.LoginTest@52aa2946]" started-at="2019-08-06T12:16:53Z" name="setup" finished-at="2019-08-06T12:17:14Z" duration-ms="20485" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.website.testcases.ProjectCreationTest@75f9eccc]" started-at="2019-08-06T18:56:51Z" name="setup" finished-at="2019-08-06T18:57:52Z" duration-ms="61152" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TestLogin()[pri:1, instance:com.website.testcases.LoginTest@52aa2946]" started-at="2019-08-06T12:17:14Z" name="TestLogin" finished-at="2019-08-06T12:17:28Z" duration-ms="14621" status="PASS">
+        <test-method signature="Init()[pri:1, instance:com.website.testcases.ProjectCreationTest@75f9eccc]" started-at="2019-08-06T18:57:52Z" name="Init" finished-at="2019-08-06T18:57:52Z" duration-ms="22" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.website.testcases.LoginTest.TestLogin(LoginTest.java:28)
+	at com.website.testcases.ProjectCreationTest.Init(ProjectCreationTest.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestLogin -->
-        <test-method is-config="true" signature="TearDownMethod(org.testng.ITestResult)[pri:0, instance:com.website.testcases.LoginTest@52aa2946]" started-at="2019-08-06T12:17:28Z" name="TearDownMethod" finished-at="2019-08-06T12:17:29Z" duration-ms="460" status="PASS">
+        </test-method> <!-- Init -->
+        <test-method is-config="true" signature="TearDownMethod(org.testng.ITestResult)[pri:0, instance:com.website.testcases.ProjectCreationTest@75f9eccc]" started-at="2019-08-06T18:57:52Z" name="TearDownMethod" finished-at="2019-08-06T18:57:52Z" duration-ms="217" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TestLogin status=SUCCESS method=LoginTest.TestLogin()[pri:1, instance:com.website.testcases.LoginTest@52aa2946] output={null}]]]>
+                <![CDATA[[TestResult name=Init status=FAILURE method=ProjectCreationTest.Init()[pri:1, instance:com.website.testcases.ProjectCreationTest@75f9eccc] output={null}]]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.website.pages.BaseClass.TearDownMethod(BaseClass.java:72)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:723)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDownMethod -->
-        <test-method signature="TestLoginWithWrongCed()[pri:2, instance:com.website.testcases.LoginTest@52aa2946]" started-at="2019-08-06T12:17:29Z" name="TestLoginWithWrongCed" finished-at="2019-08-06T12:17:40Z" duration-ms="11412" status="PASS">
+        <test-method signature="createProject()[pri:2, instance:com.website.testcases.ProjectCreationTest@75f9eccc]" started-at="2019-08-06T18:57:52Z" name="createProject" finished-at="2019-08-06T18:57:52Z" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.website.pages.BaseClass.TearDownMethod(BaseClass.java:72)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:723)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestLoginWithWrongCed -->
-        <test-method is-config="true" signature="TearDownMethod(org.testng.ITestResult)[pri:0, instance:com.website.testcases.LoginTest@52aa2946]" started-at="2019-08-06T12:17:40Z" name="TearDownMethod" finished-at="2019-08-06T12:17:40Z" duration-ms="374" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TestLoginWithWrongCed status=SUCCESS method=LoginTest.TestLoginWithWrongCed()[pri:2, instance:com.website.testcases.LoginTest@52aa2946] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDownMethod -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.website.testcases.LoginTest@52aa2946]" started-at="2019-08-06T12:17:40Z" name="TearDown" finished-at="2019-08-06T12:17:40Z" duration-ms="72" status="PASS">
+        </test-method> <!-- createProject -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.website.testcases.ProjectCreationTest@75f9eccc]" started-at="2019-08-06T18:57:52Z" name="TearDown" finished-at="2019-08-06T18:57:52Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-      </class> <!-- com.website.testcases.LoginTest -->
+      </class> <!-- com.website.testcases.ProjectCreationTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

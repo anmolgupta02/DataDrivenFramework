@@ -1,15 +1,18 @@
 package com.website.utility;
 
 import java.io.File;
+
 import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.logging.FileHandler;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+
 
 public class Helper {
 
@@ -31,4 +34,29 @@ public class Helper {
 		return format.format(date);
 		
 	}
+	
+	public static void Downaload(String Source) throws IOException {
+		
+		String wget_command = "wget -P "+System.getProperty("user.dir")+"/Downloads/"+ Source +" --no-check-certificate ";
+
+	    try {
+	    Process exec = Runtime.getRuntime().exec(wget_command);
+	    int exitVal = exec.waitFor(); 
+	    System.out.println("Exit value: " + exitVal);
+	    } catch (InterruptedException ex) {
+	    System.out.println(ex.toString());
+	    }
+		}
+	
+	public void AcceptAlert(WebDriver driver) {
+		Alert alt = driver.switchTo().alert();
+		alt.accept();
+		//APP_LOGS.debug("Alert is accepted");
+		System.out.println("Alert is accepted");
+	}
+	
+	
+	
 }
+	
+

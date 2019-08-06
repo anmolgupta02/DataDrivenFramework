@@ -53,7 +53,7 @@ public class HomePage {
 	
 	
 	public void LoginProcess(String email, String Password) throws Exception {
-			Thread.sleep(3000);
+			//Thread.sleep(3000);
 		loginButtonTrigger.click();
 		emailField.sendKeys(email);
 		passField.sendKeys(Password);

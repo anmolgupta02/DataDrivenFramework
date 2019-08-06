@@ -19,32 +19,33 @@ public class LoginTest extends BaseClass {
 	@Test(priority = 1)
 	public void TestLogin() throws Exception {
 		
-		logger = reports.createTest("Login to InstaCEI");
+		//logger = reports.createTest("Login to InstaCEI");
 		
 		homepage = PageFactory.initElements(driver, HomePage.class);
 		
-		logger.info("Reading File Content and Running");
+		//logger.info("Reading File Content and Running");
 		
 		homepage.LoginProcess(edp.getStringData("login",0,0), edp.getStringData("login",0,1));
 		
-		logger.info("The login process is complete");
+		//logger.info("The login process is complete");
+		
 		Thread.sleep(5000);
 		String landingHeadingExp = cr.getLandingHeading();
 		String actualHeading = homepage.getHeading();
 		
 		if(landingHeadingExp.equalsIgnoreCase(actualHeading)) {
-			logger.pass("Login Done! Case pased");
+			//logger.pass("Login Done! Case pased");
 		}else {
-			logger.fail("Login could not be done");
+			//logger.fail("Login could not be done");
 		}
-		logger.info("Logging out now.");
+		//logger.info("Logging out now.");
 		
 		status = homepage.logout();
 		
 		if(status) {
-		logger.pass("Logged out successfully");
+		//logger.pass("Logged out successfully");
 		}else {
-			logger.fail("Could not be logged out");
+			//logger.fail("Could not be logged out");
 		}
 		Thread.sleep(2000);
 		}
