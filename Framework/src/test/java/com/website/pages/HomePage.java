@@ -40,7 +40,7 @@ public class HomePage {
 	WebElement cross;
 	
 	@FindBy
-	(xpath="/html/body/app-root/app-theme/div/div/div[2]/app-nav-router/app-howto/section/div/div/div/h4")
+	(xpath="/html/body/app-root/app-theme/div/div/div[2]/app-nav-router/app-my-project/section/div/div/div/h4")
 	WebElement landingHeader; 
 	
 	@FindBy
@@ -48,12 +48,12 @@ public class HomePage {
 	WebElement LogoutTrigger; 
 	
 	@FindBy
-	(xpath="/html/body/app-root/app-theme/div/div/div[1]/app-header/div[2]/modal/div/div/div/div[3]/modal-footer/button[2]")
+	(xpath="/html/body/app-root/app-theme/div/div/div[1]/app-header/modal/div/div/div/div[3]/modal-footer/button[2]")
 	WebElement confirmButton;
 	
 	
 	public void LoginProcess(String email, String Password) throws Exception {
-			Thread.sleep(3000);
+			//Thread.sleep(3000);
 		loginButtonTrigger.click();
 		emailField.sendKeys(email);
 		passField.sendKeys(Password);
